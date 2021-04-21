@@ -8,7 +8,7 @@
  * @param ARTIFACT_NAME
  * @return artifact list
  */
-def static getNexusArtifactList(nexusUrl, repositoryName, artifactGroup, artifactName) {
+def getNexusArtifactList(nexusUrl, repositoryName, artifactGroup, artifactName) {
 	def response = httpRequest url: "${nexusUrl}/service/rest/v1/search?repository=${repositoryName}&group=${artifactGroup}&name=${artifactName}",
 			validResponseCodes: "200,400,404"
 	if (response.status == 200) {
