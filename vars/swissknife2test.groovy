@@ -1,3 +1,3 @@
 def static printNameTest(name){
-	echo "Hello ${name}"
+	echo "Hello A ${name}"
 }
