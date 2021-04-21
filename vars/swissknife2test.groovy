@@ -1,3 +1,3 @@
-def printNameTest(name){
+def static printNameTest(name){
 	echo "Hello ${name}"
 }
