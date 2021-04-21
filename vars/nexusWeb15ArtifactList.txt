@@ -1,0 +1,5 @@
+getNexusArtifactList(nexusUrl, repositoryName, artifactGroup, artifactName)
+    nexusUrl is url for nexus, for example - https://nexus-nexus.d1czos.ifortuna.cz
+    repositoryName is repository, for example - ifortunasnapshot, ifortunarelease
+    artifactGroup is artifact group, for example - com.etnetera
+    artifactName is artifact name, for example - jnp_4_fortuna, kralikarna
