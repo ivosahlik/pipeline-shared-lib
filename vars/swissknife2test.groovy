@@ -1,3 +1,3 @@
-def printNameTest(name){
-	echo "Hello A ${name}"
+def printNameTest(name a b c){
+	echo "Hello A ${name} ${a} ${b} ${c}"
 }
