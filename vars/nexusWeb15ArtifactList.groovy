@@ -17,3 +17,33 @@ def getNexusArtifactList(nexusUrl, repositoryName, artifactGroup, artifactName) 
 		return []
 	}
 }
+
+
+
+
+
+
+// PIPELINE SCRIPT!!!!
+//
+//try {
+//
+//	timeout(time: 3, unit: "MINUTES") {
+//
+//		node('master') {
+//
+//			stage('Validation') {
+//				def snapshotVersionList = nexusWeb15ArtifactList.getNexusArtifactList "https://nexus-nexus.d1czos.ifortuna.cz", "ifortunasnapshot", "com.etnetera", "jnp_4_fortuna"
+//
+//				echo "TEST: ${snapshotVersionList}"
+//			}
+//		}
+//	}
+//} catch (e) {
+//	node('master') {
+//		stage('Exceptional stage') {
+//			currentBuild.result = 'FAILURE'
+//			echo "$e"
+//			throw e
+//		}
+//	}
+//}
