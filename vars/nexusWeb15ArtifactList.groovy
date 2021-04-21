@@ -1,5 +1,3 @@
-#!/usr/bin/env groovy
-
 /**
  * Get version snapshot/release from Nexus
  * @param NEXUS_URL url for nexus
